@@ -9,7 +9,7 @@ public class JogoDaVelhaTest {
 	@Test
 	public void deveRetornarTrueQuandoJogadaValida() {
 		Tabuleiro tabuleiro = new Tabuleiro();
-		assertTrue(tabuleiro.jogar(1, 1));
+		assertTrue(tabuleiro.jogar(1, 1, "O"));
 
 	}
 }
