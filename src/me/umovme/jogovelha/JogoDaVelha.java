@@ -2,14 +2,18 @@ package me.umovme.jogovelha;
 
 public class JogoDaVelha {
 
-	private final String[][] casas = new String[3][3];
+	private final String[][] tabuleiro;
+
+	public JogoDaVelha(String[][] tabuleiro) {
+		this.tabuleiro = tabuleiro;
+	}
 
 	public Boolean jogar(int i, int j, String jogador) {
 		try {
-			if (casas[i][j] != null)
+			if (tabuleiro[i][j] != null)
 				return false;
 
-			casas[i][j] = jogador;
+			tabuleiro[i][j] = jogador;
 			return true;
 		} catch (IndexOutOfBoundsException ex) {
 			return false;

@@ -13,7 +13,7 @@ public class JogoDaVelhaTest {
 
 	@Before
 	public void setUp() {
-		jogoDaVelha = new JogoDaVelha();
+		jogoDaVelha = new JogoDaVelha(new String[3][3]);
 	}
 
 	@Test
